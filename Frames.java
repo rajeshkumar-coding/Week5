@@ -23,6 +23,7 @@ public static void main(String[] args) {
     {
     System.out.println("Text on Alert is: " + finalresult);
     }
+    driver.quit();
 }
 
 }
