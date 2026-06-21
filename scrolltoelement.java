@@ -1,7 +1,5 @@
 package org.testleaf.SeleniumLearing_VSCode.Week5;
-
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,9 +13,8 @@ public class scrolltoelement {
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     WebElement ele = driver.findElement(By.linkText("Amazon Pay on Merchants"));
-    //Actions act = new Actions(driver);
-    //act.scrollToElement(ele).perform();
+    Actions act = new Actions(driver);
+    act.scrollToElement(ele).perform();
     ele.click();
     }
-
 }
